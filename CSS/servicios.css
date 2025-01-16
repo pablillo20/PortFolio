@@ -1,0 +1,62 @@
+:root {
+    --Blanco: white;
+    --Negro: black;
+    --AzulPrincipal: #004aad;
+    --AzulClaro: rgba(139, 169, 241, 0.64);
+}
+
+/* Sección principal */
+.seccion-servicios {
+    background: var(--Blanco);
+    width: 100%;
+    padding: 3rem 1rem;
+}
+
+/* Título principal */
+.titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--Negro);
+}
+
+/* Contenedor de las cajas: distribución horizontal */
+.contenedor-cajas {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Estilo de las cajas */
+.caja-servicio {
+    background-color: var(--AzulClaro);
+    flex: 1;
+    max-width: 20rem;
+    min-width: 15rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Iconos dentro de las cajas */
+.icono-servicio {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--AzulPrincipal);
+}
+
+/* Títulos dentro de las cajas */
+.titulo-servicio {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Descripciones dentro de las cajas */
+.descripcion-servicio {
+    font-size: 1rem;
+    line-height: 1.5;
+}

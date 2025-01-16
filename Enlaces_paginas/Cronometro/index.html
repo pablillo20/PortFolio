@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cronómetro</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ff9f1a;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+        }
+
+        .contenedor {
+            text-align: center;
+        }
+
+        #tiempo {
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+
+        button {
+            margin: 0.2rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="contenedor">
+    <h1>Cronómetro</h1>
+    <div id="tiempo">00:00</div>
+    <button id="iniciar">Iniciar</button>
+    <button id="detener">Detener</button>
+    <button id="reiniciar">Reiniciar</button>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

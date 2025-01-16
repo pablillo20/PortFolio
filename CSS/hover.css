@@ -1,0 +1,90 @@
+/* Hover en enlaces de navegación */
+.navegacion a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Efecto en enlace GitHub */
+.enlace-github::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3rem;
+    height: 3rem;
+    background-image: url('../Imagenes/github.png');
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover en enlace GitHub - ícono */
+.enlace-github:hover::after {
+    opacity: 1;
+}
+
+/* Hover en enlace GitHub - color y fondo */
+.enlace-github:hover {
+    color: transparent;
+    background: linear-gradient(45deg, #ff0077, #5700ff);}
+
+.enlace-github:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+/* Hover en íconos de redes sociales */
+.redes-sociales i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes-sociales i:hover {
+    transform: scale(1.5) rotate(10deg);
+    color: #ff4500; /* Naranja brillante */
+    text-shadow: 0px 0px 15px rgba(255, 69, 0, 0.75);
+}
+
+/* Hover en ítems de galería - imagen */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.2) rotate(2deg);
+    transition: transform 0.5s ease;
+}
+
+/* Hover en ítems de galería - overlay */
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+}
+/* Hover en las cajas */
+.caja-servicio:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Hover en botón del formulario de contacto */
+.formulario-contacto button {
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background: linear-gradient(45deg, #002a5b, #00b4d8);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}

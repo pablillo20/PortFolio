@@ -1,0 +1,90 @@
+:root {
+    --Blanco: #ffffff;
+    --Negro: #000000;
+    --AzulHero: #0d11e7;
+    --MoradoClaro: #B197FC;
+    --NegroTransparente: rgba(0, 0, 0, 0.5);
+}
+
+/* Sección Hero */
+.seccion-hero {
+    display: flex;
+    color: var(--Blanco);
+    height: 100vh;
+}
+
+/* Información del perfil */
+.informacion-perfil {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Imagen del perfil */
+.imagen-perfil img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Texto del perfil */
+.texto-perfil {
+    max-width: 40rem;
+    color: var(--Negro);
+}
+
+.texto-perfil h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px var(--NegroTransparente);
+}
+
+.texto-perfil h2 {
+    font-size: 1.5rem;
+    opacity: 0.85;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px var(--NegroTransparente);
+}
+
+.texto-perfil p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Enlace a GitHub */
+.enlace-github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--AzulHero);
+    color: var(--Blanco);
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    font-size: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.enlace-github:hover span {
+    opacity: 0;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales i {
+    color: var(--MoradoClaro);
+    margin: 1rem;
+    font-size: 2rem;
+    transition: transform 0.3s;
+}

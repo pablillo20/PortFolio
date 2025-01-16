@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .tablero {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .carta {
+            width: 100px;
+            height: 100px;
+            background-color: #3faffa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .volteada {
+            background-color: #f2f2f2;
+            color: black;
+        }
+
+        .coincide {
+            background-color: #66cc66;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Juego de Memoria</h1>
+<div class="tablero" id="tablero"></div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

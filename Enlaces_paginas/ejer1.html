@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitectura Bosque</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      /* height: 100%; */
+      font-family: Arial, sans-serif;
+      color: #FFF;
+      overflow: hidden;
+    }
+
+    .header {
+      background-image: url('https://i.blogs.es/f7a1cd/fondo/1366_2000.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      position: relative;
+    }
+
+    .navegacion {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 30px;
+    }
+
+    .navegacion a {
+      color: #FFF;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 8px 12px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .navegacion a:hover {
+      background: rgba(77, 253, 8, 0.5);
+      color: #111111;
+      border-radius: 4px;
+    }
+
+    .titulo-principal {
+      font-size: 2rem;
+      font-weight: 900;
+    }
+
+    .titulo-principal span {
+      color: #00B050;
+    }
+
+    .texto-inferior {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: right;
+      align-self: flex-end;
+    }
+
+    .subtitulo {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #ffffff;
+    }
+
+    /* Puntos de ruptura */
+    @media (max-width: 1000px) {
+      .titulo-principal {
+        display: flex;
+        font-size: 1.8rem;
+        justify-content: center;
+      }
+      .navegacion {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        margin-right:250px ;
+        top: 55px;
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .titulo-principal {
+        font-size: 1.5rem;
+      }
+      .texto-inferior {
+        font-size: 1.2rem;
+      }
+      .subtitulo {
+        font-size: 0.9rem;
+      }
+      .navegacion {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        margin-right:105px ;
+        top: 55px;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="titulo-principal">Arquitectura<span>Bosque</span></div>
+
+  <nav class="navegacion">
+    <a href="#">Inicio</a>
+    <a href="#">Nosotros</a>
+    <a href="#">Modelos</a>
+    <a href="#">Galería</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <div class="texto-inferior">
+    Tu casa en el bosque
+    <div class="subtitulo">Construimos el lugar de tus sueños</div>
+  </div>
+</header>
+</body>
+</html>

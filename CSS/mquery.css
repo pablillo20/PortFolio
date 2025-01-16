@@ -1,0 +1,178 @@
+/* Media Query */
+@media (max-width: 768px) {
+    /* Navegación */
+    .navegacion {
+        width: 100%;
+    }
+    .enlaces-navegacion {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #0d11e7;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .enlaces-navegacion.active {
+        display: flex;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Sección Hero */
+    .seccion-hero {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: 100%;
+    }
+
+    .informacion-perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-perfil img {
+        margin-top: 2rem;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .texto-perfil {
+        text-align: center;
+    }
+
+    .texto-perfil h1 {
+        font-size: 2rem;
+    }
+
+    .texto-perfil h2 {
+        font-size: 1.2rem;
+    }
+
+    .texto-perfil p {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .enlace-github {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .redes-sociales {
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .redes-sociales i {
+        font-size: 2rem;
+    }
+
+    /* Progreso */
+    .progreso {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .progreso h2 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+
+    .barra {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /* Galería de Imágenes */
+    .gallery-row {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 80%;
+        height: auto;
+    }
+
+    /* Servicios vista movil */
+    .contenedor-cajas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja-servicio {
+        max-width: 90%;
+    }
+
+    /* Sección Contacto */
+    .seccion-contacto {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .contenedor-contacto {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .titulo-contacto {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .informacion-contacto h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .informacion-contacto p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .formulario-contacto h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+        text-align: center;
+    }
+
+    .formulario-contacto input,
+    .formulario-contacto textarea {
+        font-size: 1rem;
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .formulario-contacto button {
+        margin: 1rem auto;
+        padding: 0.8rem 1.5rem;
+        display: block;
+    }
+
+    /* Footer */
+    .footer {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+

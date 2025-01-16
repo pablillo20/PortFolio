@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de Ahorcado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #a6ce39;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    .contenedor {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    table {
+      margin: 20px 0;
+      border-collapse: collapse;
+    }
+
+    td {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-size: 1.5em;
+      border: 1px solid #fff;
+      cursor: pointer;
+    }
+
+    .palabra-oculta {
+      font-size: 2em;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #vidas, #racha {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+
+<div class="contenedor">
+  <h1>AHORCADO</h1>
+  <p>Haz clic en las letras para adivinar la palabra.</p>
+
+  <div id="vidas">Vidas: 10</div>
+  <div id="racha">Racha: 0</div>
+
+  <table id="alfabeto">
+    <tr>
+      <td>A</td>
+      <td>B</td>
+      <td>C</td>
+      <td>D</td>
+      <td>E</td>
+      <td>F</td>
+      <td>G</td>
+      <td>H</td>
+      <td>I</td>
+      <td>J</td>
+      <td>K</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>N</td>
+      <td>O</td>
+      <td>P</td>
+      <td>Q</td>
+      <td>R</td>
+      <td>S</td>
+      <td>T</td>
+      <td>U</td>
+      <td>V</td>
+      <td>W</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Y</td>
+      <td>Z</td>
+    </tr>
+  </table>
+
+  <div id="palabra-oculta" class="palabra-oculta"></div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

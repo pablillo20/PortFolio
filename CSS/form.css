@@ -1,0 +1,103 @@
+:root {
+    --Negro: #050505;
+    --AzulOscuro: #0d11e7;
+    --AzulBoton: #003d80;
+    --Blanco: white;
+    --GrisClaro: #ccc;
+    --Rojo: red;
+    --Verde: green;
+    --AzulEnfoque: #007BFF;
+}
+
+/* Sección Contacto */
+.seccion-contacto {
+    background: linear-gradient(135deg, var(--Negro), var(--AzulOscuro));
+    color: var(--Blanco);
+    padding: 3.75rem 0;
+    width: 100%;
+}
+
+/* Titulo de la sección de contacto */
+.titulo-contacto {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Contenedor del formulario y datos de contacto */
+.contenedor-contacto {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* Estilo para los datos de contacto */
+.informacion-contacto, .formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+    flex: 1;
+}
+
+/* Títulos de los datos de contacto y formulario */
+.informacion-contacto h3, .formulario-contacto h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.9375rem;
+}
+
+/* Estilo de los párrafos en los datos de contacto */
+.informacion-contacto p {
+    font-size: 1rem;
+    margin: 0.3125rem 0;
+}
+
+/* Etiquetas del formulario */
+.formulario-contacto label {
+    font-size: 1.1rem;
+}
+
+/* Estilo de los campos de texto del formulario */
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 0.9375rem;
+    font-size: 1rem;
+    border: 0.0625rem solid var(--GrisClaro);
+    border-radius: 0.25rem;
+}
+
+/* Estilo del botón de enviar */
+.formulario-contacto button {
+    padding: 0.625rem 1.25rem;
+    font-size: 1.1rem;
+    background-color: var(--AzulBoton);
+    color: var(--Blanco);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para campos de entrada vacíos */
+input:invalid, textarea:invalid {
+    border: 2px solid var(--Rojo);
+}
+
+/* Estilo cuando el campo es válido */
+input:valid, textarea:valid {
+    border: 2px solid var(--Verde);
+}
+
+/* Estilo al enfocar en un campo */
+input:focus, textarea:focus {
+    border-color: var(--AzulEnfoque);
+    outline: none;
+}
+
+/* Estilo de campo para telefono que no es obligatorio */
+#telefono input:invalid {
+    border-color: var(--AzulEnfoque);
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="./CSS/form.css">
+  <link rel="stylesheet" href="./CSS/layout.css">
+  <link rel="stylesheet" href="./CSS/navegacion.css">
+  <link rel="stylesheet" href="./CSS/hover.css">
+  <link rel="stylesheet" href="./CSS/hero.css">
+  <link rel="stylesheet" href="./CSS/galeria.css">
+  <link rel="stylesheet" href="./CSS/progreso.css">
+  <link rel="stylesheet" href="CSS/servicios.css">
+  <link rel="stylesheet" href="./CSS/mquery.css">
+  <script src="https://kit.fontawesome.com/7fe309129d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Contenedor que contiene todo el contenido-->
+<div class="contenedor">
+  <!--Class navegacion -->
+  <nav class="navegacion">
+    <div class="imagen-navegacion">
+      <a href="#seccion-hero"> <img src="./Imagenes/portfolio.png" alt="Logo"></a>
+    </div>
+    <!--Menu hamburguesa para vista moviles -->
+    <div class="menu-hamburguesa">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="enlaces-navegacion">
+      <a href="#seccion-trabajos">Trabajos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#progreso">Progreso</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero con Datos del Usuario -->
+  <header id="seccion-hero" class="seccion-hero">
+    <div class="informacion-perfil perfil-contenedor">
+      <div class="imagen-perfil" id="imagen-perfil">
+        <img src="./Imagenes/FotoPerfil.jpeg" alt="Foto de perfil">
+      </div>
+      <div id="texto-perfil" class="texto-perfil">
+        <h1>Pablo Rubio Nogales</h1>
+        <h2>Desarrollador Web</h2>
+        <p>¡Hola! Soy Pablo, un apasionado desarrollador web con experiencia en JavaScript, CSS y PHP. Me encanta crear proyectos innovadores y desafiantes. ¡Conectemos y trabajemos juntos!</p>
+        <a href="https://github.com/pablillo20" target="_blank" class="enlace-github">Mi GitHub</a>
+      </div>
+      <!-- Imagenes redes sociales -->
+      <div class="redes-sociales">
+        <a href="https://www.instagram.com/pabloo.rubio/" target="_blank">
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </a>
+        <a href="https://x.com/rubioo234" target="_blank">
+          <i class="fa-brands fa-x-twitter fa-2xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/pablo-rubio-nogales-4b0a24324/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- seccion progeso -->
+  <section id="progreso" class="progreso">
+    <h2>Niveles de Programación</h2>
+    <div class="barra">
+      <h3>Nivel de programación en: JavaScript</h3>
+      <div class="progress">
+        <div class="progress-value" data-valor="90%"></div>
+      </div>
+    </div>
+    <div class="barra">
+      <h3>Nivel de programación en: CSS</h3>
+      <div class="progress">
+        <div class="progress-value" data-valor="80%"></div>
+      </div>
+    </div>
+    <div class="barra">
+      <h3>Nivel de programación en: PHP </h3>
+      <div class="progress">
+        <div class="progress-value" data-valor="70%"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="seccion-servicios">
+    <h2 class="titulo-seccion">Mis Servicios</h2>
+    <div class="contenedor-cajas">
+      <div class="caja-servicio">
+        <div class="icono-servicio">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3 class="titulo-servicio">Desarrollo Web</h3>
+        <p class="descripcion-servicio">Diseñar, crear y mantener sitios web, proporcionando en el proceso un portal online coherente y fácil de usar para los clientes</p>
+      </div>
+      <div class="caja-servicio">
+        <div class="icono-servicio">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3 class="titulo-servicio">Conocimiento General</h3>
+        <p class="descripcion-servicio">Conocimiento alto en Java, en proceso de aprendizaje en JavaScript, PHP. Además de un css básico pero en aprendizaje</p>
+      </div>
+      <div class="caja-servicio">
+        <div class="icono-servicio">
+          <i class="fas fa-headset"></i>
+        </div>
+        <h3 class="titulo-servicio">Soporte Técnico</h3>
+        <p class="descripcion-servicio">Experiencia con reparaciones a equipos actaules y equipos de generaciones más traseras, cableado de red y gestión y distribuicion de la red </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Seccion trabajos -->
+  <section id ="seccion-trabajos"class="gallery-section">
+    <h2>Mis Proyectos</h2>
+    <div class="gallery-container">
+      <div class="gallery-row">
+        <div class="gallery-item">
+          <a href="./Enlaces_paginas/Cronometro/index.html" target="_blank">
+            <img src="./Imagenes/galeria1.png" alt="Imagen 1" class="gallery-image">
+            <div class="overlay">
+              <p>Haz clic para probar</p>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="./Enlaces_paginas/HangGame/index.html" target="_blank">
+            <img src="./Imagenes/galeria2.png" alt="Imagen 2" class="gallery-image">
+            <div class="overlay">
+              <p>Haz clic para probar</p>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="./Enlaces_paginas/ListaCompra/index.html" target="_blank">
+            <img src="./Imagenes/galeria3.png" alt="Imagen 3" class="gallery-image">
+            <div class="overlay">
+              <p>Haz clic para probar</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="gallery-row">
+        <div class="gallery-item">
+          <a href="./Enlaces_paginas/PairsGame/index.html" target="_blank">
+            <img src="./Imagenes/galeria4.png" alt="Imagen 4" class="gallery-image">
+            <div class="overlay">
+              <p>Haz clic para probar</p>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="./Enlaces_paginas/ejer1.html" target="_blank">
+            <img src="./Imagenes/galeria5.png" alt="Imagen 5" class="gallery-image">
+            <div class="overlay">
+              <p>Haz clic para probar</p>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="./Enlaces_paginas/JuegoPONG" target="_blank">
+            <img src="./Imagenes/galeria6.png" alt="Imagen 6" class="gallery-image">
+            <div class="overlay">
+              <p>Haz clic para probar</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- seccion contacto -->
+  <section id="contacto" class="seccion-contacto">
+    <h2 class="titulo-contacto">Contacto</h2>
+    <div class="contenedor-contacto">
+      <div class="informacion-contacto">
+        <h3>Mis Datos</h3>
+        <p><strong>Teléfono:</strong> 693 685 322</p>
+        <p><strong>Correo:</strong> rubiopablo577@gmail.com</p>
+        <p><strong>Ubicación:</strong> Carretera de Priego,Nº4, Ventorros de San José</p>
+      </div>
+      <!-- Formulario de Contacto -->
+      <div class="formulario-contacto">
+        <h3>Envíame un mensaje</h3>
+        <form id="formulario" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" placeholder="Correo Electronico" required>
+
+          <label for="telefono">Número de teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Numero de telefono">
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Mensaje : " required></textarea>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Footer, pie de página -->
+  <footer class="footer">
+    <div class="footer-derechos">
+      <p>&copy; 2024 Pablo Rubio Nogales</p>
+    </div>
+
+    <div class="footer-redes">
+      <a href="https://www.instagram.com/pabloo.rubio/" target="_blank">
+        <i class="fa-brands fa-instagram fa-2xl"></i>
+      </a>
+      <a href="https://x.com/rubioo234" target="_blank">
+        <i class="fa-brands fa-x-twitter fa-2xl"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/pablo-rubio-nogales-4b0a24324/" target="_blank">
+        <i class="fa-brands fa-linkedin fa-2xl"></i>
+      </a>
+    </div>
+
+    <div class="footer-contacto">
+      <p><a href="#contacto">Contáctame</a></p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

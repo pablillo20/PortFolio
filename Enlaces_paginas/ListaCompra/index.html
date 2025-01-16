@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      max-width: 400px;
+      height: 100px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px 0 0 0;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    li {
+      background-color: #f9f9f9;
+      margin: 10px 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    li button {
+      background-color: #2196F3;
+      padding: 5px 10px;
+      margin-left: 5px;
+    }
+
+    li button.delete {
+      background-color: #f44336;
+    }
+
+    li button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <h1>Mi Lista de Compra</h1>
+  <form id="formulario">
+    <textarea id="mensaje" name="mensaje" rows="2" placeholder="Escribe un ítem de compra"></textarea><br>
+    <button type="submit" id="bnt">Añadir</button>
+  </form>
+
+  <h3>Lista de Compras:</h3>
+  <ul id="lista"></ul>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
