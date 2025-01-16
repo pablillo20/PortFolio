@@ -4,7 +4,10 @@
   - Proyectos destacados
   - Niveles de programación en distintos lenguajes
   - Servicios
-  - Presentacion basica
+  - Presentacion basicaç
+
+
+
 -- Por incluir :
   - Actulaizacion de poryectos destacados
   - Más lenguajes (java, mySQL)
